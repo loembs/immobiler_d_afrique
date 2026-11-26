@@ -1857,6 +1857,12 @@
    (Appliqué à <= 900px ET dans .app-frame--mobile)
    =========================== */
 @media (max-width: 900px) {
+  .studio-bar {
+    display: none;
+  }
+  .viewport-stage--framed {
+    padding: 0;
+  }
   .main-nav,
   .header-actions .btn,
   .header-actions .lang-toggle {
