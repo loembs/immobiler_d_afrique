@@ -1,0 +1,15 @@
+{
+  "title": "Immobilier d’Afrique : Podcast & Plateforme Média",
+  "description": "Écoutez le podcast Immobilier d’Afrique, explorez les éditions passées de la Masterclass et inscrivez-vous pour être prévenu·e du prochain événement.",
+  "language": "fr",
+  "icons": {
+    "icon": "/favicon.png"
+  },
+  "robots": {
+    "index": false
+  },
+  "accessibility": {
+    "addBypassLinks": true,
+    "ignoreReducedMotion": false
+  }
+}
