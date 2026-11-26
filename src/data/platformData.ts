@@ -7,6 +7,9 @@ export const HERO_BANNER_URL =
 export const YOUTUBE_CHANNEL_URL =
   'https://www.youtube.com/channel/UCPClbg_6jwtZrVH0rdJuWQQ'
 
+export const EXAMPLE_IMAGE_URL =
+  'https://res.cloudinary.com/dprbhsvxl/image/upload/v1795658653/imgi_2_arch-plan-1-1_yz4dav.png'
+
 export type ThemeTag =
   | 'Financement'
   | 'Juridique'
@@ -351,7 +354,7 @@ export const pastEvents: PastEvent[] = [
     headline: 'La Masterclass de référence au Pullman Dakar.',
     summary:
       'Pendant une journée complète au Pullman Teranga de Dakar, investisseurs locaux, membres de la diaspora, banquiers, notaires et promoteurs ont confronté leurs méthodes autour de cas réels d’acquisition, de financement et de construction.',
-    heroImage: '/images/event-dakar-pullman.jpg',
+    heroImage: EXAMPLE_IMAGE_URL,
     metrics: [
       { value: '380', label: 'Participant·es sur place' },
       { value: '12', label: 'Panélistes & experts' },
@@ -396,7 +399,7 @@ export const pastEvents: PastEvent[] = [
         role: 'Notaire associée',
         organization: 'Étude Fall & Associés',
         city: 'Dakar',
-        image: '/images/invite-aissatou.jpg',
+        image: EXAMPLE_IMAGE_URL,
         topic: 'Titres fonciers & VEFA',
         isExample: true,
       },
@@ -405,7 +408,7 @@ export const pastEvents: PastEvent[] = [
         role: 'Directeur financements structurés',
         organization: 'Banque Atlantique Conseil',
         city: 'Dakar',
-        image: '/images/invite-moussa.jpg',
+        image: EXAMPLE_IMAGE_URL,
         topic: 'Crédit diaspora & effet de levier',
         isExample: true,
       },
@@ -414,16 +417,16 @@ export const pastEvents: PastEvent[] = [
         role: 'Architecte fondatrice',
         organization: 'Atelier AD',
         city: 'Dakar',
-        image: '/images/invite-aminata.png',
+        image: EXAMPLE_IMAGE_URL,
         topic: 'Conception bioclimatique & coûts',
         isExample: true,
       },
     ],
     gallery: [
-      { src: '/images/event-dakar-pullman.jpg', caption: 'Plénière d’ouverture dans la salle Teranga (contenu d’exemple)' },
-      { src: '/images/invite-aissatou.jpg', caption: 'Intervention notariale sur la sécurisation des actes (contenu d’exemple)' },
-      { src: '/images/invite-moussa.jpg', caption: 'Session questions-réponses financement & diaspora (contenu d’exemple)' },
-      { src: '/images/event-architecture.jpg', caption: 'Étude de cas : programme résidentiel sur la Corniche (contenu d’exemple)' },
+      { src: EXAMPLE_IMAGE_URL, caption: 'Plénière d’ouverture dans la salle Teranga (contenu d’exemple)' },
+      { src: EXAMPLE_IMAGE_URL, caption: 'Intervention notariale sur la sécurisation des actes (contenu d’exemple)' },
+      { src: EXAMPLE_IMAGE_URL, caption: 'Session questions-réponses financement & diaspora (contenu d’exemple)' },
+      { src: EXAMPLE_IMAGE_URL, caption: 'Étude de cas : programme résidentiel sur la Corniche (contenu d’exemple)' },
     ],
     replays: [
       {
@@ -473,7 +476,7 @@ export const pastEvents: PastEvent[] = [
     headline: 'Connecter la diaspora européenne aux acteurs fiables du terrain.',
     summary:
       'Une soirée de conférences et de rendez-vous qualifiés réunissant des investisseurs basés en France, Belgique et Suisse autour de notaires, architectes et gestionnaires venus de Dakar et d’Abidjan.',
-    heroImage: '/images/event-architecture.jpg',
+    heroImage: EXAMPLE_IMAGE_URL,
     metrics: [
       { value: '240', label: 'Participant·es à Paris' },
       { value: '8', label: 'Intervenant·es' },
@@ -506,7 +509,7 @@ export const pastEvents: PastEvent[] = [
         role: 'Directeur financements structurés',
         organization: 'Banque Atlantique Conseil',
         city: 'Paris / Dakar',
-        image: '/images/invite-moussa.jpg',
+        image: EXAMPLE_IMAGE_URL,
         isExample: true,
       },
       {
@@ -514,13 +517,13 @@ export const pastEvents: PastEvent[] = [
         role: 'Notaire associée',
         organization: 'Étude Fall & Associés',
         city: 'Dakar',
-        image: '/images/invite-aissatou.jpg',
+        image: EXAMPLE_IMAGE_URL,
         isExample: true,
       },
     ],
     gallery: [
-      { src: '/images/event-dakar-pullman.jpg', caption: 'Échanges avec le public parisien (contenu d’exemple)' },
-      { src: '/images/invite-moussa.jpg', caption: 'Décryptage des montages bancaires diaspora (contenu d’exemple)' },
+      { src: EXAMPLE_IMAGE_URL, caption: 'Échanges avec le public parisien (contenu d’exemple)' },
+      { src: EXAMPLE_IMAGE_URL, caption: 'Décryptage des montages bancaires diaspora (contenu d’exemple)' },
     ],
     replays: [
       {
@@ -556,7 +559,7 @@ export const pastEvents: PastEvent[] = [
     headline: 'La première rencontre fondatrice à Dakar.',
     summary:
       'L’édition inaugurale qui a posé les bases de la communauté Immobilier d’Afrique : réunir dans une même salle ceux qui conçoivent, financent, encadrent juridiquement et investissent.',
-    heroImage: '/images/invite-aminata.png',
+    heroImage: EXAMPLE_IMAGE_URL,
     metrics: [
       { value: '290', label: 'Participant·es' },
       { value: '9', label: 'Intervenant·es' },
@@ -583,12 +586,12 @@ export const pastEvents: PastEvent[] = [
         role: 'Architecte & fondatrice',
         organization: 'Atelier AD',
         city: 'Dakar',
-        image: '/images/invite-aminata.png',
+        image: EXAMPLE_IMAGE_URL,
         isExample: true,
       },
     ],
     gallery: [
-      { src: '/images/invite-aminata.png', caption: 'Prise de parole inaugurale à Dakar (contenu d’exemple)' },
+      { src: EXAMPLE_IMAGE_URL, caption: 'Prise de parole inaugurale à Dakar (contenu d’exemple)' },
     ],
     replays: [
       {
