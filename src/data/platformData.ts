@@ -7,6 +7,8 @@ export const HERO_BANNER_URL =
 export const YOUTUBE_CHANNEL_URL =
   'https://www.youtube.com/channel/UCPClbg_6jwtZrVH0rdJuWQQ'
 
+export const OFFICIAL_SITE_URL = 'https://immobilierdafrique.com/'
+
 export const EXAMPLE_IMAGE_URL =
   'https://res.cloudinary.com/dprbhsvxl/image/upload/v1795658653/imgi_2_arch-plan-1-1_yz4dav.png'
 

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Episode, episodes, PastEvent, pastEvents } from './data/platformData'
+import { Episode, episodes, OFFICIAL_SITE_URL, PastEvent, pastEvents } from './data/platformData'
 import { NextEventPage, PastEventDetailPage, PastEventsListPage } from './components/EventsPages'
 import { HomePage } from './components/HomePage'
 import { Icon } from './components/Icons'
@@ -36,7 +36,14 @@ export default function App() {
   }
 
   const goNotify = (profile?: UserProfileType) => {
-    setDefaultFormProfile(profile ?? '')
+    if (!profile) {
+      const opened = window.open(OFFICIAL_SITE_URL, '_blank', 'noopener,noreferrer')
+      if (!opened) {
+        window.location.href = OFFICIAL_SITE_URL
+      }
+      return
+    }
+    setDefaultFormProfile(profile)
     setRoute('next-event')
     window.setTimeout(() => {
       document.querySelector('#inscription')?.scrollIntoView({ behavior: 'smooth' })
@@ -116,13 +123,12 @@ export default function App() {
 
       <div className={`viewport-stage${viewportMode !== 'fluid' ? ' viewport-stage--framed' : ''}`}>
         <div
-          className={`app-frame${
-            viewportMode === 'desktop'
+          className={`app-frame${viewportMode === 'desktop'
               ? ' app-frame--desktop'
               : viewportMode === 'mobile'
                 ? ' app-frame--mobile'
                 : ''
-          }`}
+            }`}
         >
           <Header
             route={route}
